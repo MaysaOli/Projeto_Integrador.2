@@ -1,0 +1,10 @@
+pip install Flask
+/meu_projeto
+    /static
+        /images
+            imagem.png
+    /templates
+        index.html
+    app.py
+
+

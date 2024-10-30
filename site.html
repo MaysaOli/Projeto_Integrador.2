@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem-vindo</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to right, rgba(224, 0, 217, 0.767), rgba(246, 147, 241, 0.767));
+            color: rgb(14, 14, 14);
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        nav {
+            margin: 20px 0;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: #ffcc00;
+            text-decoration: none;
+            font-weight: bold;
+            background-color: rgba(99, 5, 96, 0.767);
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            background-color: rgba(255, 0, 255, 0.9);
+        }
+
+        a {
+            color: #ffcc00;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 20px;
+            background-color: rgba(99, 5, 96, 0.767);
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        a:hover {
+            background-color: rgba(255, 0, 255, 0.9);
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+
+            a {
+                padding: 8px 16px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="imagem1.png.png" alt="Logotipo do Site" style="max-width: 350px;">
+             <h1>Ajuda e Suporte para Vítimas de Violência</h1>
+            <nav>
+                <a href="report.php">Reportar Agressão</a>
+                <a href="conselhos.html">Conselhos</a>
+                <a href="superacao.html">Mensagem de Superação</a>
+                <a href="contato.html">Contato</a>
+        </nav>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Documento carregado e pronto!');
+
+            // Exemplo de interação com um botão
+            const reportLink = document.querySelector('a[href="report.html"]');
+            reportLink.addEventListener('click', function(event) {
+                alert('Você está prestes a reportar uma agressão.');
+            });
+        });
+    </script>
+</body>
+</html>

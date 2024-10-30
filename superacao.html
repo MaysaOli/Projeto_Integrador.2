@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensagem de Superação</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to right, rgba(224, 0, 217, 0.767), rgba(246, 147, 241, 0.767));
+            color: rgb(14, 14, 14);
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        nav {
+            position: absolute;
+            top: 20px;
+            width: 100%;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: #ffcc00;
+            text-decoration: none;
+            font-weight: bold;
+            background-color: rgba(99, 5, 96, 0.767);
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            background-color: rgba(255, 0, 255, 0.9);
+        }
+
+        .logo-section {
+            margin-bottom: 20px;
+        }
+
+        .logo-section h1 {
+            margin-top: 10px;
+            font-size: 20px;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #ffcc00;
+            border-radius: 5px;
+        }
+
+        .container {
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .container h1 {
+            margin-bottom: 20px;
+            font-size: 28px;
+            color: #ffcc00;
+        }
+
+        .container #mensagem {
+            font-size: 24px;
+            margin: 20px 0;
+            color: #ffcc00;
+        }
+
+        .container #autor {
+            font-size: 20px;
+            color: #ffcc00;
+        }
+
+        .container button {
+            padding: 15px 25px;
+            font-size: 18px;
+            background-color: #ffcc00;
+            color: #000;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .container button:hover {
+            background-color: #e6b800;
+        }
+
+        footer {
+    color: purple;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="site.html">Início</a>
+        <a href="report.php">Reportar Agressão</a>
+        <a href="conselhos.html">Conselhos</a>
+        <a href="contato.html">Contato</a>
+    </nav>
+
+    <div class="logo-section">
+        <h1>Lembre-se: A superação é uma jornada, não um destino,
+        <p>Cada dia é uma nova chance para reconstruir sua vida e encontrar a felicidade que você merece.</p></h1>
+    </div>
+
+    <div class="container">
+        <h1>Mensagem de Superação</h1>
+        <p id="mensagem">Clique no botão para receber uma mensagem de superação.</p>
+        <p id="autor" class="author"></p>
+        <button onclick="gerarMensagem()">Aperte e Receba a Mensagem</button>
+<footer>
+    <p>&copy; 2024 Mensagens de Superação. Todos os direitos reservados.</p>
+</footer>
+    </div>
+
+    <script>
+        const mensagens = [
+            { texto: "Você é muito mais forte do que imagina...", autor: "- MO" },
+            { texto: "Eu sei que os dias têm sido difíceis...", autor: "- MO" },
+            { texto: "A violência que você sofre não é sua culpa...", autor: "- MO" },
+            { texto: "Cada passo em direção à superação é uma vitória...", autor: "- MO" },
+            { texto: "Você merece viver uma vida cheia de amor...", autor: "- MO" },
+            { texto: "A dor e o sofrimento que enfrenta agora não definem quem você é...", autor: "- MO" },
+            { texto: "Continue lutando por sua liberdade e felicidade...", autor: "- MO" },
+            { texto: "Porque você merece viver sem medo e com esperança no futuro...", autor: "- MO" },
+            { texto: "Nunca perca a fé em si mesmo(a)...", autor: "- MO" },
+            { texto: "Permita-se buscar essa ajuda, permita-se sonhar com um futuro melhor...", autor: "- MO" },
+            { texto: "O caminho para a superação pode ser longo...", autor: "- MO" },
+            { texto: "Continue lutando por você...", autor: "- MO" },
+            { texto: "Lembre-se: você não está sozinho.", autor: "- MO" },
+        ];
+
+        function gerarMensagem() {
+            const indiceAleatorio = Math.floor(Math.random() * mensagens.length);
+            const mensagemSelecionada = mensagens[indiceAleatorio];
+
+            document.getElementById("mensagem").textContent = mensagemSelecionada.texto;
+            document.getElementById("autor").textContent = mensagemSelecionada.autor;
+        }
+    </script>
+</body>
+</html>
+
