@@ -2,7 +2,7 @@
 // Configurações do banco de dados
 $dbHost = 'localhost';
 $dbUsername = 'root';
-$dbPassword = 'lorenzo';
+$dbPassword = '';
 $dbName = 'usuario';
 
 // Criar uma nova conexão MySQLi
